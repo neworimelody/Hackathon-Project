@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+	<center>
+		<header>What Language Should I Learn?</header>
+
+		<div class="outputBox" id="outputBox">
+			<p id="output"> </p>
+		</div>
+        <input oninput="showQuote(document.getElementById('quote').value)"type= "text" id="quote" ><br><br>
+        <select onchange="showQuote(document.getElementById('quote').value)"  id="fontFamily" >    <option value="Font Family">Font Family</option>
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Impact">Impact</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Brush Script MT">Brush Script MT</option></select>
+        </center>
+  
+          <center>
+            <input  oninput= "showQuote(document.getElementById('quote').value)" type="range" min="10" max="60" value="25" class="slider" id="size">
+          </body>
+       
