@@ -15,22 +15,38 @@
 		<div class="outputBox" id="outputBox">
 			<p id="output"> </p>
 		</div>
+        
         <input oninput="showQuote(document.getElementById('quote').value)"type= "text" id="quote" ><br><br>
-        <select onchange="showQuote(document.getElementById('quote').value)"  id="fontFamily" >    <option value="Font Family">Font Family</option>
-            <option value="Arial">Arial</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Times New Roman">Times New Roman</option>
-            <option value="Courier New">Courier New</option>
-            <option value="Arial Black">Arial Black</option>
-            <option value="Helvetica">Helvetica</option>
-            <option value="Impact">Impact</option>
-            <option value="Tahoma">Tahoma</option>
-            <option value="Trebuchet MS">Trebuchet MS</option>
-            <option value="Verdana">Verdana</option>
-            <option value="Brush Script MT">Brush Script MT</option></select>
+        <center><center>
+            <input  oninput= "showQuote(document.getElementById('quote').value)" type="range" min="10" max="60" value="25" class="slider" id="size"></center> 
+        <select onchange="showQuote(document.getElementById('quote').value)"  id="fontFamily" >    <option value="Font Family">Select Branch</option>
+            <option value="Sintic">Sintic</option>
+            <option value="Romance">Romance</option>
+            <option value="Germanic">Germanic</option>
+            <option value="Indo-Aryan">Indo-Aryan</option>
+            <option value="Balto-Slavic">Balto-Slavic</option>
+            <option value="Japanese">Japanese</option>
+            <option value="South-Central">South-Central</option>
+            <option value="Oghuz">Oghuz</option>
+            <option value="language isolate">language isolate</option>
+            <option value="Vietic">Vietic</option>
+            <option value="South">South</option>
+            <option value="Malayo-Polynisian">Malayo-Polynisian</option>
+            <option value="Iranian">Iranian</option>
+            <option value="Chadic">Chadic</option>
+            <option value="Volta-Niger">Volta-Niger</option>
+            <option value="Lolo-Burmese">Lolo-Burmese</option>
+            <option value="Semitic">Semetic</option>
+            <option value="Karluk">Karluk</option>
+            <option value="Tai">Tai</option>
+            <option value="Khmer">Khmer</option>
+            <option value="Cushitic">Cushitic</option>
+            <option value="Hellenic">Hellenic</option>
+            <option value="Kipchak">Kipchak</option>
+            <option value="Ugric">Ugric</option>
+            <option value="Bantu">Bantu</option>
         </center>
   
-          <center>
-            <input  oninput= "showQuote(document.getElementById('quote').value)" type="range" min="10" max="60" value="25" class="slider" id="size">
+          
           </body>
        
