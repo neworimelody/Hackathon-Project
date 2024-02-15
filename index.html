@@ -16,14 +16,23 @@
             
 			<p id="output"> </p>
 		</div>
+<<<<<<< Updated upstream
         <p>Enter your information below to calculate which language to learn next.</p>
         Languages already Spoken:  <input oninput="showQuote(document.getElementById('quote').value)"type= "text" id="quote" ><br><br>
+=======
+        
+        Languages already Spoken:  <input oninput="getLanguage(document.getElementById('quote').value)"type= "text" id="quote" ><br><br>
+>>>>>>> Stashed changes
         <center><center>
             Rank:
-            <input  oninput= "showQuote(document.getElementById('quote').value)" type="range" min="10" max="60" value="25" class="slider" id="rank"></center>
+            <input  oninput= "getLanguage(document.getElementById('quote').value)" type="range" min="1" max="91" value="25" class="slider" id="rank"></center>
             Branch:  
+<<<<<<< Updated upstream
 
         <select onchange="showQuote(document.getElementById('quote').value)"  id="branch" >    <option value="Font Family">Select Branch</option>
+=======
+        <select onchange="getLanguage(document.getElementById('quote').value)"  id="branch" >    <option value="Font Family">Select Branch</option>
+>>>>>>> Stashed changes
             <option value="Sintic">Sintic</option>
             <option value="Romance">Romance</option>
             <option value="Germanic">Germanic</option>
@@ -49,11 +58,17 @@
             <option value="Kipchak">Kipchak</option>
             <option value="Ugric">Ugric</option>
             <option value="Bantu">Bantu</option>
+<<<<<<< Updated upstream
         </select>
   </center>
 
   <br> 
   <button onclick="getLanguage()">Generate Language</button>        
+=======
+        </center>
+
+  
+>>>>>>> Stashed changes
           
           </body>
        
