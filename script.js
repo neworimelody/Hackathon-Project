@@ -3,4 +3,8 @@ var language = getColumn (url, 2);
 var branch = getColumn (url, 6);
 var rank = getColumn (url, 1);
 
+function getLanguage(){
+    
+}
+var spokenLanguage = document.getElementById("spoken").value
 

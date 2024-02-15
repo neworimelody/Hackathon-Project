@@ -12,17 +12,14 @@
 	<center>
 		<header>What Language Should I Learn?</header>
 
-			 <div class="outputBox" id="outputBox">
-            
+		<div class="outputBox" id="outputBox">
 			<p id="output"> </p>
 		</div>
         
-        Languages already Spoken:  <input oninput="showQuote(document.getElementById('quote').value)"type= "text" id="spoken" ><br><br>
+        <input oninput="showLanguage(document.getElementById('language').value)"type= "text" id="spoken" ><br><br>
         <center><center>
-            Rank:
-            <input  oninput= "showQuote(document.getElementById('quote').value)" type="range" min="10" max="60" value="25" class="slider" id="size"></center>
-            Branch:  
-        <select onchange="showQuote(document.getElementById('quote').value)"  id="fontFamily" >    <option value="Font Family">Select Branch</option>
+            <input  oninput= "showLanguage(document.getElementById('language').value)" type="range" min="1" max="91" value="25" class="slider" id="size"></center> 
+        <select onchange="showLanguage(document.getElementById('language').value)"  id="languageBranch" >    <option value="Language Branch">Select Branch</option>
             <option value="Sintic">Sintic</option>
             <option value="Romance">Romance</option>
             <option value="Germanic">Germanic</option>
@@ -52,4 +49,6 @@
   
           
           </body>
-       
+          <script src = "utils.js"></script> 
+          <script src="script.js"></script>
+        </body>
