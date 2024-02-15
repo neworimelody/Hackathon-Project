@@ -4,7 +4,16 @@ var branch = getColumn (url, 6);
 var rank = getColumn (url, 1);
 
 function getLanguage(){
-    
-}
-var spokenLanguage = document.getElementById("spoken").value
 
+
+var spokenLanguage = document.getElementById("spoken").value;
+var rank = document.getElementById("rank").value;
+var branch = document.getElementById("branch").value;
+
+var matches = [];
+
+
+
+
+
+}
