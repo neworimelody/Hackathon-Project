@@ -6,19 +6,20 @@ var popularity = getColumn (url, 1);
 function getLanguage(){
 
 
-var spokenLanguage = document.getElementById("spoken").value;
-var rank = document.getElementById("rank").value;
-var branch = document.getElementById("branch").value;
-
-var matches = [];
-
-for(var i = 0; i < language.length; i++){
-    if (!spokenLanguage.includes(language[i]) && popularity[i] > rank && branch == genre[i] ){
-        matches.push(language[i])
+    var spokenLanguage = document.getElementById("spoken").value;
+    var rank = document.getElementById("rank").value;
+    var branch = document.getElementById("branch").value;
+    
+    var matches = [];
+    
+    for(var i = 0; i < language.length; i++){
+        if (!spokenLanguage.includes(language[i]) && popularity[i] > rank && branch == genre[i] ){
+            matches.push(language[i])
+        }
     }
-}
-
-
-
-}
-console.log (matches);
+    
+    
+    
+    }
+    console.log (matches);
+    
