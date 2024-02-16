@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(255, 212, 233);
+    font-family: PT Sans Narrow;
+    font-size: 20px;
+  }
+header {
+    font-family: Caveat;
+    font-size: 30px;
+
+}
+
+  p {
+    font-family: PT Sans Narrow;
+    font-size: 20px;
+  }
+  button {
+    font-family : PT Sans Narrow;
+    font-size: 20px
+  }
+  onchange {
+    font-family : PT Sans Narrow;
+  }

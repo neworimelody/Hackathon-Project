@@ -14,12 +14,12 @@ function getLanguage(){
     
     for(var i = 0; i < language.length; i++){
         if (!spokenLanguage.includes(language[i]) && popularity[i] > rank && branch == genre[i] ){
-            matches.push(language[i])
+            matches.push(matches[i])
         }
     }
     
-    
+    document.getElementById("match").innerHTML = output;
     
     }
-    console.log (matches);
+   
     
