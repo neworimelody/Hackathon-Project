@@ -50,7 +50,12 @@ var finalMatches = [];
     //this prints the matches but it's not necessary
     console.log(finalMatches);
     //this links that matches variable to the HTML so that it prints in the preview
-    document.getElementById("match").innerHTML = finalMatches.join("<br><br>");
     
+    if(matches.length > 0){
+        document.getElementById("match").innerHTML = finalMatches.join("<br><br>");
+    }
+    else{
+        document.getElementById("match").innerHTML = "No Matches";
+    }
     }
    
