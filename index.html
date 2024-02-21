@@ -8,30 +8,51 @@
 	<meta name="viewport" content="width=device-width">
 	<title>replit</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Playpen+Sans:wght@100..800&family=Rubik+Doodle+Shadow&family=Titan+One&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <style>
+header{
+    font-family: "Rubik Doodle Shadow", system-ui;
+    }
+body{
+    font-family: "Ysabeau Infant", sans-serif;
+}
+select{
+    font-family: "Ysabeau Infant", sans-serif;
+}
+button{
+    font-family: "Ysabeau Infant", sans-serif;
+}
+    </style>
+    
+
 </head>
+
+
+
+
 <body>
     <center>
         <header>What Language Should I Learn?</header>
-    </center>
-</body>
-<body1>
-	
-    <center>
 
-			 <div class="outputBox" id="outputBox">
-            
-			<p id="output"> </p>
-		</div>
+
+			 
         <p>Enter your information below to calculate which language to learn next.</p>
-        Languages already Spoken:  <input oninput="showQuote(document.getElementById('quote').value)"type= "text" id="quote" ><br><br>
-        <center><center>
-            Rank:
-            <input  oninput= "showQuote(document.getElementById('quote').value)" type="range" min="10" max="60" value="25" class="slider" id="rank"></center>
-            Branch:  
+        Languages already Spoken:  <input type= "text" id="spoken" ><br><br>
+        <center>
+            Language Popularity:
+            <input type="range" min="1" max="91" value="25" class="slider" id="rank">
 
-        <select onchange="showQuote(document.getElementById('quote').value)"  id="branch" >    <option value="Font Family">Select Branch</option>
-            <option value="Sintic">Sintic</option>
+            <br>
+            Language Branch:  
+
+        <select  id="branch">   
+            <option value="branch">Select Branch</option>
+            <option value="Sinitic">Sinitic</option>
             <option value="Romance">Romance</option>
             <option value="Germanic">Germanic</option>
             <option value="Indo-Aryan">Indo-Aryan</option>
@@ -64,5 +85,5 @@
   
   <p id = "match" ></p>
        
-          </body1>
+          </body>
        </html>

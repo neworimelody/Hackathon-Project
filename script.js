@@ -9,16 +9,20 @@ function getLanguage(){
     var spokenLanguage = document.getElementById("spoken").value;
     var rank = document.getElementById("rank").value;
     var branch = document.getElementById("branch").value;
-    
+    console.log(spokenLanguage);
+    console.log(rank);
+    console.log(branch);
     var matches = [];
     
     for(var i = 0; i < language.length; i++){
-        if (!spokenLanguage.includes(language[i]) && popularity[i] > rank && branch == genre[i] ){
-            matches.push(matches[i])
+        
+        if (!spokenLanguage.includes(language[i]) && parseFloat(popularity[i]) > rank && branch == genre[i] ){
+            
+            matches.push(language[i])
         }
     }
-    
-    document.getElementById("match").innerHTML = output;
+    console.log(matches);
+    document.getElementById("match").innerHTML = matches.join("<br><br>");
     
     }
    

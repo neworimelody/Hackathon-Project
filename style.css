@@ -1,22 +1,30 @@
 body {
     background-color: rgb(255, 212, 233);
     font-family: PT Sans Narrow;
-    font-size: 20px;
+    font-size: 15px;
+    color : rgb(172, 86, 137);
   }
 header {
-    font-family: Caveat;
-    font-size: 30px;
+    font-size: 40px;
+    color :rgb(145, 46, 105);
 
 }
 
-  p {
-    font-family: PT Sans Narrow;
-    font-size: 20px;
-  }
   button {
     font-family : PT Sans Narrow;
     font-size: 20px
+    
   }
   onchange {
     font-family : PT Sans Narrow;
   }
+  input[type=text] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(219, 130, 183);
+    border-radius: 4px;
+    background-color: rgb(251, 239, 255);
+  }
+
