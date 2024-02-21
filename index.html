@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Playpen+Sans:wght@100..800&family=Rubik+Doodle+Shadow&family=Titan+One&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
     <style>
 header{
     font-family: "Rubik Doodle Shadow", system-ui;
@@ -27,7 +28,16 @@ select{
 button{
     font-family: "Ysabeau Infant", sans-serif;
 }
+hr.rounded {
+  border-top: 4px solid rgb(219, 130, 183);
+  border-radius: 5px;
+  margin-top : 20px
+}
+ 
     </style>
+
+
+
     
 
 </head>
@@ -78,11 +88,12 @@ button{
             <option value="Ugric">Ugric</option>
             <option value="Bantu">Bantu</option>
         </select>
+        
   </center>
 
   <br> 
   <button onclick="getLanguage()">Generate Language</button>     
-  
+  <hr class="rounded">
   <p id = "match" ></p>
        
           </body>
