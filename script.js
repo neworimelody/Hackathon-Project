@@ -17,7 +17,7 @@ function getLanguage(spokenLanguage){
     // var spokenLanguage = document.getElementById("spoken").value;
     var rank = document.getElementById("rank").value;
     var branch = document.getElementById("branch").value;
-    //This console.log's the inputs in the preview but it's not necessary
+    //This prints the inputs in the preview but it's not necessary
     console.log(spokenLanguage);
     console.log(rank);
     console.log(branch);
@@ -49,11 +49,10 @@ var finalMatches = [];
     
     //this prints the matches but it's not necessary
     console.log(finalMatches);
-    //this links that matches variable to the HTML so that it prints in the preview
-    
+    //this links that matches variable to the HTML so that it prints in the preview if the values are greater than zero
     if(matches.length > 0){
         document.getElementById("match").innerHTML = finalMatches.join("<br><br>");
-    }
+    }//if there are no answers then this prints "No Matches"
     else{
         document.getElementById("match").innerHTML = "No Matches";
     }
