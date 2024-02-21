@@ -54,7 +54,7 @@ hr.rounded {
         <p>Enter your information below to calculate which language to learn next.</p>
         Languages already Spoken:  <input type= "text" id="spoken" ><br><br>
         <center>
-            Language Popularity:
+            Language Popularity (More Popular to Less Popular):
             <input type="range" min="1" max="91" value="25" oninput= showSlider() class="slider" id="rank">
             <p id="sliderValue"></p>
             <br>
@@ -92,7 +92,7 @@ hr.rounded {
   </center>
 
   <br> 
-  <button onclick="getLanguage()">Generate Language</button>     
+  <button onclick="getLanguage(document.getElementById('spoken').value)">Generate Language</button>     
   <hr class="rounded">
   <p id = "match" ></p>
        
