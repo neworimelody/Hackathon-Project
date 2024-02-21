@@ -27,16 +27,23 @@ function getLanguage(){
     while(i < 91){
         //this is the if statement that shows which data should be included when
             //If the spoken language isn't included and the popularity and the branch matches up
-            if (!spokenLanguage.includes(language[i]) && parseFloat(popularity[i]) > rank && branch == genre[i] ){
+            if (!spokenLanguage.includes(language[i]) && parseFloat(popularity[i]) > rank){
                 //then add this to to the list of matches
                 matches.push(language[i])
             }
             i++;
     }
+
+    var finalMatches = [];
+    for(var i = 0; i < language.length; i++){
+        if(branch == genre[i]){
+            finalMatches.push(language[i])
+        }
+    }
     //this console.log's the matches but it's not necessary
-    console.log(matches);
+    console.log(finalMatches);
     //this links that matches variable to the HTML so that it prints in the preview
-    document.getElementById("match").innerHTML = matches.join("<br><br>");
+    document.getElementById("match").innerHTML = finalMatches.join("<br><br>");
     
     }
    
