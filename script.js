@@ -11,10 +11,10 @@ var genre = getColumn (url, 6);
 var popularity = getColumn (url, 1);
 
 //This creates the function with different conditions to find which language users should learn 
-function getLanguage(){
+function getLanguage(spokenLanguage){
 
 //these variables link to the html and gather the data when its typed into the preview of the html
-    var spokenLanguage = document.getElementById("spoken").value;
+    // var spokenLanguage = document.getElementById("spoken").value;
     var rank = document.getElementById("rank").value;
     var branch = document.getElementById("branch").value;
     //This console.log's the inputs in the preview but it's not necessary
@@ -23,24 +23,30 @@ function getLanguage(){
     console.log(branch);
     //this creates an empty variable so that a new list of matches can be made each time
     var matches = [];
+    //this sets i to 0 so it works in the while loop
     var i = 0;
-    while(i < 91){
+    //This is the while loop that contains 2/3 of the information
+    while(i < language.length){
         //this is the if statement that shows which data should be included when
-            //If the spoken language isn't included and the popularity and the branch matches up
+            //If the spoken language isn't included and the popularity matches up
             if (!spokenLanguage.includes(language[i]) && parseFloat(popularity[i]) > rank){
                 //then add this to to the list of matches
                 matches.push(language[i])
             }
+            //this makes i go up each time so it doesn't have i at 0 forever
             i++;
     }
-
+//this is another variable for the final set of matches. This creates a new blank variable
     var finalMatches = [];
+    //this is the for loop that loops through the list of languages
     for(var i = 0; i < language.length; i++){
+        //this is the if statement that contains the final 1/3 of information
         if(branch == genre[i]){
+            //if the branch and the genre match, then add to the final list of matches
             finalMatches.push(language[i])
         }
     }
-    //this console.log's the matches but it's not necessary
+    //this prints the matches but it's not necessary
     console.log(finalMatches);
     //this links that matches variable to the HTML so that it prints in the preview
     document.getElementById("match").innerHTML = finalMatches.join("<br><br>");
