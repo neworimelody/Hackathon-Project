@@ -23,14 +23,15 @@ function getLanguage(){
     console.log(branch);
     //this creates an empty variable so that a new list of matches can be made each time
     var matches = [];
-    //this is the for loop that loops through the different languages to find which of the inputted data matches
-    for(var i = 0; i < language.length; i++){
+    var i = 0;
+    while(i < 91){
         //this is the if statement that shows which data should be included when
-        //If the spoken language isn't included and the popularity and the branch matches up
-        if (!spokenLanguage.includes(language[i]) && parseFloat(popularity[i]) > rank && branch == genre[i] ){
-            //then add this to to the list of matches
-            matches.push(language[i])
-        }
+            //If the spoken language isn't included and the popularity and the branch matches up
+            if (!spokenLanguage.includes(language[i]) && parseFloat(popularity[i]) > rank && branch == genre[i] ){
+                //then add this to to the list of matches
+                matches.push(language[i])
+            }
+            i++;
     }
     //this console.log's the matches but it's not necessary
     console.log(matches);
