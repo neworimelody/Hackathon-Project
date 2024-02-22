@@ -50,7 +50,7 @@ var finalMatches = [];
     //this prints the matches but it's not necessary
     console.log(finalMatches);
     //this links that matches variable to the HTML so that it prints in the preview if the values are greater than zero
-    if(matches.length > 0){
+    if(finalMatches.length > 0){
         document.getElementById("match").innerHTML = finalMatches.join("<br><br>");
     }//if there are no answers then this prints "No Matches"
     else{
