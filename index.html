@@ -6,7 +6,7 @@
     <script src="script.js"></script>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>replit</title>
+	<title>Language Finder</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@ hr.rounded {
         
         <center>
             Language Popularity (Most to Least):
-            <input type="range" min="1" max="91" value="25" oninput= showSlider() class="slider" id="rank">
+            <input type="range" min="1" max="91" value="25"  class="slider" id="rank">
             <p id="sliderValue"></p>
             <br>
             Language Branch:  
@@ -93,7 +93,7 @@ hr.rounded {
   </center>
 
   <br> 
-  <button onclick="getLanguage()">Generate Language</button>     
+  <button onclick="getLanguage(document.getElementById('spoken').value)">Generate Language</button>     
   <hr class="rounded">
   <p id = "match" ></p>
        
