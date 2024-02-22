@@ -32,6 +32,7 @@ function getLanguage(spokenLanguage){
             matches.push(language[i])
         }
     }
+    console.log(matches);
 //this is another variable for the final set of matches. This creates a new blank variable
 var finalMatches = [];
     var i = 0;
@@ -48,7 +49,7 @@ var finalMatches = [];
     }
     
     //this prints the matches but it's not necessary
-    console.log(finalMatches);
+   
     //this links that matches variable to the HTML so that it prints in the preview if the values are greater than zero
     if(finalMatches.length > 0){
         document.getElementById("match").innerHTML = finalMatches.join("<br><br>");
@@ -56,5 +57,5 @@ var finalMatches = [];
     else{
         document.getElementById("match").innerHTML = "No Matches";
     }
-    }
+ }
    
